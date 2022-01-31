@@ -41,9 +41,6 @@ _Note: There is already JWT authentication implemented for the app._
 1.  Create a page where a user can fill out a form to get rates for the United States using the Stallion API
 2.  Display these rates to the user showing the cost information
 
-### Submission
-Create a pull request on Github. Name the branch as {firstname}-{lastname}-submission.
-
 ## Grading Scheme
 
 - Functionality: Out of 10
@@ -63,8 +60,6 @@ cp .env.example .env
 ```
 ***Use Docker container containing PHP and Composer to install the application's dependencies***
 https://laravel.com/docs/8.x/sail#installing-composer-dependencies-for-existing-projects
-
-Linux/MacOS
 ```
 docker run --rm \
     -u "$(id -u):$(id -g)" \

@@ -3,7 +3,7 @@
     <div class="top-right links">
       <template v-if="authenticated">
         <router-link :to="{ name: 'home' }">
-          {{ $t('home') }}
+          {{ $t('login') }}
         </router-link>
       </template>
       <template v-else>

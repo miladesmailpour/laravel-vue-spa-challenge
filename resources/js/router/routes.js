@@ -1,4 +1,4 @@
-function page (path) {
+function page(path) {
   return () => import(/* webpackChunkName: '' */ `~/pages/${path}`).then(m => m.default || m)
 }
 
@@ -13,6 +13,8 @@ export default [
   { path: '/email/resend', name: 'verification.resend', component: page('auth/verification/resend.vue') },
 
   { path: '/home', name: 'home', component: page('home.vue') },
+  { path: '/add', name: 'add', component: page('add-edit.vue') },
+  { path: '/edit/:note', name: 'edit', component: page('add-edit.vue') },
   {
     path: '/settings',
     component: page('settings/index.vue'),
